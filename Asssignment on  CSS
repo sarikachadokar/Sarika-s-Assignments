@@ -1,0 +1,186 @@
+1.
+<!DOCTYPE>
+<html>
+<head>
+<title>1st Assignment</title>
+<style>
+h1,div,p{
+margin : 0px;
+
+}
+</style>
+</head>
+
+<body>
+<h1 style ="background-color : blue ; height:40px" >CSS Background-color Example !</h1>
+<div style ="background-color : grey ; height:40px"> This is a text inside a div element.</div>
+<p style ="background-color :lightblue; height:40px">This paragraph has its own background color</p>
+<div style ="background-color : grey; height:40px"> We are still in the div element.</div>
+</body>
+</html>
+
+2.
+<!DOCTYPE>
+<html>
+<head>
+<title>2nd Assignment</title>
+</head>
+<body style ="background-color : lightblue">
+<h1><b>This is Heading 1</b></h1>
+<h2><strike>This is Heading 2 </strike></h2>
+<h3><u>This is Heading 3</u></h3>
+<h4>This is Heading 4</h4>
+</body>
+</html>
+
+3.
+<!DOCTYPE>
+<html>
+<head>
+<title>3rd Assignment</title>
+</head>
+<body style ="background-color : lightblue">
+<label>THIS IS SOME TEXT</label><br>
+<label>This is some text</label><br>
+<label>This is some text</label>
+</body>
+</html>
+
+4.
+<!DOCTYPE>
+<html>
+<head>
+<title>4th Assignment</title>
+<style>
+a:visited
+{
+color:red
+}
+</style>
+</head>
+<body style ="background-color : lightblue">
+<a href="">This is a link</a>
+</body>
+</html>
+
+5.
+<!DOCTYPE>
+<html>
+<head>
+<title>5th Assignment</title>
+<style>
+th,tr,td{
+border:1px solid black;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Palak</td>
+<td>Gupta</td>
+</tr>
+<tr>
+<td>Sarika</td>
+<td>Chadokar</td>
+</tr>
+</table>
+</body>
+</html>
+
+6.
+<!DOCTYPE>
+<html>
+<head>
+<title>6th Assignment</title>
+<style>
+th,tr,td,table{
+border:1px solid green;
+
+}
+th{
+background-color:green;
+color:white;
+}
+
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Saving</th>
+</tr>
+<tr>
+<td>Palak</td>
+<td>Gupta</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>Sarika</td>
+<td>Chadokar</td>
+<td>$150</td>
+</tr>
+<tr>
+<td>joe</td>
+<td>swanson</td>
+<td>$300</td>
+</tr>
+<tr>
+<td>cleveland</td>
+<td>brown</td>
+<td>$250</td>
+</tr>
+</table>
+</body>
+</html>
+
+7.
+<!DOCTYPE>
+<html>
+<head>
+<title>1st Assignment</title>
+</head>
+<style>
+p
+{
+font-size:40px;
+border:1px solid red;
+}
+p
+{
+border:5px dotted yellow;
+
+}
+</style>
+<body>
+<p><b>Note : </b> IE8 supports the outline properties only if a !DOCTYPE is specified</p>
+
+</body>
+</html>
+
+8.
+<!DOCTYPE>
+<html>
+<head>
+<title>8th Assignment</title>
+<style>
+h1{
+background-color : lightblue;
+width:100%;
+font-size:20px;
+}
+</style>
+</head>
+<body>
+<h1 style="border:1px solid black ;border-width:6px">Some text</h1><br>
+<h1 style="border:1px solid black ;border-width:4px">Some text</h1><br>
+<h1 style="border:1px solid black ;border-width:2px">Some text</h1><br>
+<h1>ss</h1>
+</body>
+</html>
