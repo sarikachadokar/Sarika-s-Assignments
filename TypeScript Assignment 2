@@ -1,0 +1,84 @@
+class Account
+{
+    id:number;
+    name:string;
+    balance:number;
+
+    constructor(id_new:number, name_new:string, balance_new:number) {
+        this.id = id_new;
+        this.name = name_new;
+        this.balance = balance_new;
+      }
+}
+   
+class SavingsAccount extends Account
+{
+    interest:number;
+
+    constructor(id_new:number, name_new:string, balance_new:number, int:number) {
+        super(id_new,name_new,balance_new);
+        this.interest = int;
+      }
+
+      totalBalance():number {  
+        var totalbalance = this.balance*(this.interest/100)*4;
+        return totalbalance;
+    } 
+}
+
+class CurrentAccount extends Account
+{
+    interest:number;
+
+    constructor(id_new:number, name_new:string, balance_new:number, int:number) {
+        super(id_new,name_new,balance_new);
+        this.interest = int;
+      }
+
+    totalBalance():number{  
+        var totalbalance = this.balance*(this.interest/100)*4;
+        return totalbalance;
+    }
+}
+
+let saving1 = new SavingsAccount(1,"sarika",500,7);
+let current1 = new CurrentAccount(7,"Palak",9900,5);  
+console.log(saving1.totalBalance());
+console.log(current1.totalBalance());
+
+PS C:\Users\SSURESHC\Downloads\JS Assignments\TS Assignment2> tsc que1.ts
+PS C:\Users\SSURESHC\Downloads\JS Assignments\TS Assignment2> node que1.js
+1568.0000000000002
+1980
+
+2.
+
+const x = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('The first promise has resolved');
+      resolve(10);
+    }, 1 * 1000);
+  });
+  const y = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('The second promise has resolved');
+      resolve(20);
+    }, 2 * 1000);
+  });
+  
+  
+  Promise.all([x,y]).then((results) => {
+    const total = results.reduce((p, c) => p + c);
+  
+    console.log(`Results: ${results}`);
+    console.log(`Total: ${total}`);
+  });
+  
+  
+  ANS:
+  
+  PS C:\Users\SSURESHC\Downloads\JS Assignments\TS Assignment2> node que2.js
+The first promise has resolved
+The second promise has resolved
+Results: 10,20
+Total: 30
