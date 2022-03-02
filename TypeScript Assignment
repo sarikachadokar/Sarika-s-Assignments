@@ -1,0 +1,136 @@
+1. constant 
+
+const str="Hello sarika";
+str= "sarika";
+
+function fun()
+
+{
+
+    console.log(str);
+
+}
+
+fun();
+
+ANS:
+Cannot assign to 'str' because it is a constant.
+
+2 str= "sarika";
+  ~~~
+  
+  Q 2.
+   
+var  x = 10;  
+if (x >0) { 
+   let a=10;
+   a= a+x;  
+   console.log("inside a loop"+a);   
+}  
+console.log(a);
+
+ANS:
+console.log(a);
+            ^
+
+ReferenceError: a is not defined
+    at Object.<anonymous> (C:\Users\SSURESHC\Downloads\JS Assignments\TS Assignment1\que2.js
+    
+    
+    3.
+    
+    var Order={
+    id:10,
+    title:"kurti",
+    price:"500",
+    printprice(){
+        console.log(Order);
+           },
+    getPrice(){
+        console.log(Order.price);
+    }
+    
+};
+
+var returnedOrder=(<any>Object).assign({}, Order)
+    console.log(returnedOrder);
+    
+    ANS:
+    
+    {
+  id: 10,
+  title: 'kurti',
+  price: '500',
+  printprice: [Function: printprice],
+  getPrice: [Function: getPrice]     
+}
+
+
+5.
+
+
+
+5.1 function add(n1, n2=10)
+{
+    return n1 + n2;
+}
+
+console.log(add(10,20));
+console.log(add(30));
+ANS:
+
+PS C:\Users\SSURESHC\Downloads\JS Assignments\TS Assignment1> node que5.js
+30
+40
+
+5.2 const names = ['sarika', 'palak', 'riya'];
+const uppercased = names.map(name => name.toUpperCase());
+
+console.log(...uppercased);
+
+ANS:
+SARIKA PALAK RIYA
+
+5.3
+function userFun(...args){
+    console.log(args);
+    //return args;
+    
+}
+userFun("sarika", ["palak","riya"]);
+
+ANS :sarika , ["palak","riya"]
+
+
+6. 
+let laptopModel = 1;
+let deskNo = 2;
+let userName="sarika";
+
+function myTag(strings, laptopExp, deskNoExp, desk, str) {
+  let str0 = strings[0]; // "That laptop "
+  let str1 = strings[1]; // " is a "
+  let str2 = strings[2];
+ // let str3= strings[3];
+  //let str4= strings[4]; // "."
+  
+
+  let ageStr: string;
+  if (deskNo!= null){
+    ageStr = 'registered';
+  } else {
+    ageStr = 'not register, please provide desk no ';
+  }
+
+  // We can even return a string built using a template literal
+  return `${str0}${userName}${str1}${laptopExp}${str2}`;
+
+7.1
+
+let number: string[] = ['10', '20', '30','40']; 
+console.log(number[3]);
+ANS:
+40
+
+
+
